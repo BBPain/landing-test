@@ -249,7 +249,7 @@ section#portfolio-section article figure figcaption {
 section#portfolio-section article figure figcaption a {
     font-size: 2rem;
     text-decoration: none;
-    color: lightseagreen;
+    color: #20b2aa;
     transition: color 1s;
 }
 
@@ -258,6 +258,14 @@ section#portfolio-section article figure figcaption a:hover {
 }
 
 /* contact section */
+
+section#contact-section {
+    background-image: url('/img/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-bottom: .5rem;
+}
 
 input,
 textarea,
@@ -270,17 +278,29 @@ button {
     border: none;
 }
 
+button{
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+button:hover{
+    background-color: #c49237;
+    color: #fff;
+}
+
 textarea{
     width: 100%;
     resize: none;
 }
 
-section#contact-section {
-    text-align: center;
-}
-
 section#contact-section a{
     text-decoration: none;
+    color: #000;
+}
+
+section#contact-section p{
+    color: #fff;
+    padding: .5rem;
 }
 
 section#contact-section a:hover{
@@ -293,14 +313,64 @@ section#contact-section form{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(75, 143, 139);
-    margin: .5rem 0;
+    background-color: rgba(75, 143, 139, .7);
     border-radius: 10px;
 }
 
 /* media */
 
-@media (max-width: 576px) {
+@media all and (max-width: 1199px) {
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+} 
+@media all and (max-width: 991px) {
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    section#about-section figure img {
+        width: 18rem;
+    }
+
+    section#about-section figure figcaption {
+        font-size: .9rem;
+    }
+} 
+@media all and (max-width: 768px) {
+
+} 
+
+@media (max-width: 575px) {
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    #main-header{
+        width: 70%;
+    }
+
+    section#about-section figure img {
+        width: 16rem;
+    }
+
+    section#about-section figure figcaption {
+        font-size: .8rem;
+        width: 100%;
+    }
+    
     #hidden-menu {
         display: inline-block;
     }
