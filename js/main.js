@@ -11,10 +11,5 @@ $(document).ready(function () {
         if (width > 576 && $('#menu-list').is(':hidden')) {
             $('#menu-list').removeAttr('style');
         }
-
-/*         let docHeight = $(document).height();
-        $('.wrapper').css('height', docHeight); */
-
-        // $('footer').css('top', docHeight+'px');
     });
 });
